@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+config_path = File.join ARGV[0], "server.yaml"
+monkey_path = File.join ARGV[0], "monkey.yaml"
+
+if File.exist?(config_path) && File.exist?(monkey_path)
+  puts "Mockingjay goooooo"
+  exit 0
+else
+  exit 1
+end

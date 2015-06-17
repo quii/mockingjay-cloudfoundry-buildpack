@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require 'open-uri'
+
+#sync output
+
+$stdout.sync = true
+
+build_path = ARGV[0]
+cache_path = ARGV[1]
+
+dl_mockingjay
+
+private
+
+def dl_mockingjay
+	puts "Installing Mockingjay"
+	install_path = File.join build_path, "mockingjay"
+	open(install_path, 'wb') do |file|
+	  file << open('https://github.com/quii/mockingjay-server/releases/download/pre-release/linux_amd64_mockingjay-server').read
+	end
+end
