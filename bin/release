@@ -3,6 +3,8 @@
 build_path = ARGV[0]
 install_path = File.join build_path, "mockingjay-server"
 
+$stderr.puts "Install path for MJ is maybe #{install_path}"
+
 puts "config_vars:"
 puts "  FOO: bar"
 puts "default_process_types:"
