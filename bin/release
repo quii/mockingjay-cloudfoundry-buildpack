@@ -7,6 +7,14 @@ config_path = File.join build_path, "server.yaml"
 $stderr.puts "Install path for MJ is maybe #{install_path}"
 $stderr.puts "  web: #{install_path} -config=#{config_path} -port=$PORT"
 
+if !File.exist?(install_path)
+	$stderr.puts "INSTALL PATH ISNT CORRECT WTF"
+end
+
+if !File.exist?(config_path)
+	$stderr.puts "CONFIG PATH ISNT CORRECT WTF"
+end
+
 puts "config_vars:"
 puts "  FOO: bar"
 puts "default_process_types:"
