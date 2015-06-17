@@ -1,4 +1,8 @@
-config_vars:
+#!/usr/bin/env ruby
+
+result = %q{config_vars:
 	FOO: bar
 default_process_types:
-  web: ./mockingjay-server -config=server.yaml -port=$PORT
+  web: ./mockingjay-server -config=server.yaml -port=$PORT}
+
+puts result
