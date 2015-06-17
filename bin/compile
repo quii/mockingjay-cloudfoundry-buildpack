@@ -15,7 +15,7 @@ private
 
 def dl_mockingjay
 	puts "Installing Mockingjay"
-	install_path = File.join build_path, "mockingjay"
+	install_path = File.join build_path, "mockingjay-server"
 	open(install_path, 'wb') do |file|
 	  file << open('https://github.com/quii/mockingjay-server/releases/download/pre-release/linux_amd64_mockingjay-server').read
 	end

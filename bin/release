@@ -1,0 +1,3 @@
+config_vars:
+default_process_types:
+  web: ./mockingjay-server -config=server.yaml -port=$PORT

@@ -1,0 +1,10 @@
+---
+ - name: Identity BP Info endpoint
+   request:
+     uri: /ars/rest/bp/3
+     method: GET
+   response:
+     code: 200
+     body: '{"businessPartners":[{"id":"3","name":"Demo Corp","type":"Demo","features":["awe"]}]}'
+     headers:
+       content-type: text/json
