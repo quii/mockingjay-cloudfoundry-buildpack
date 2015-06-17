@@ -4,6 +4,7 @@ build_path = ARGV[0]
 install_path = File.join build_path, "mockingjay-server"
 
 $stderr.puts "Install path for MJ is maybe #{install_path}"
+$stderr.puts "  web: #{install_path} -config=server.yaml -port=$PORT"
 
 puts "config_vars:"
 puts "  FOO: bar"
