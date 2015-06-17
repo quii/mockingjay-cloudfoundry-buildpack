@@ -3,4 +3,4 @@
 puts "config_vars:"
 puts "  FOO: bar"
 puts "default_process_types:"
-puts "  web: ./mockingjay-server -config=server.yaml -port=$PORT}"
+puts "  web: ./mockingjay-server -config=server.yaml -port=$PORT"
