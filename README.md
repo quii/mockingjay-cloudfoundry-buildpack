@@ -1,4 +1,4 @@
-# mockingjay-server Cloud Foundry Buildpack
+# Mockingjay Cloud Foundry Buildpack
 
 This buildpack will let you take a mockingjay config and monkey config and have a mockingjay web server run in your Cloud Foundry environment. 
 
