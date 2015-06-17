@@ -1,3 +1,4 @@
 config_vars:
+	FOO: bar
 default_process_types:
   web: ./mockingjay-server -config=server.yaml -port=$PORT
