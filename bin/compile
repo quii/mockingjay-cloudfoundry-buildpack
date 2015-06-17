@@ -16,4 +16,4 @@ File.open(install_path, 'w+') do |file|
   file << open('https://github.com/quii/mockingjay-server/releases/download/pre-release/linux_amd64_mockingjay-server').read
 end
 
-File.chmod("01777", install_path)
+File.chmod(01777, install_path)
