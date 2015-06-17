@@ -1,10 +1,9 @@
 #!/usr/bin/env ruby
 
-File.open(ARGV[0], 'w+') do |file|
-	file.puts "config_vars:"
-	file.puts "  FOO: bar"
-	file.puts "default_process_types:"
-	file.puts "  web: mockingjay-server -config=server.yaml -port=$PORT"
-end
+build_path = ARGV[0]
+install_path = File.join build_path, "mockingjay-server"
 
-
+puts "config_vars:"
+puts "  FOO: bar"
+puts "default_process_types:"
+puts "  web: #{install_path} -config=server.yaml -port=$PORT"
