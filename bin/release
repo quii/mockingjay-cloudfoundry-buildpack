@@ -5,7 +5,7 @@ install_path = File.join build_path, "mockingjay-server"
 config_path = File.join build_path, "server.yaml"
 
 $stderr.puts "Install path for MJ is maybe #{install_path}"
-$stderr.puts "  web: #{install_path} -config=#{config_path} -port=#{ENV["PORT"]}"
+$stderr.puts "  web: #{install_path} -config=#{config_path} -port=$PORT"
 
 if !File.exist?(install_path)
 	$stderr.puts "INSTALL PATH ISNT CORRECT WTF"
@@ -18,4 +18,4 @@ end
 puts "config_vars:"
 puts "  FOO: bar"
 puts "default_process_types:"
-puts "  web: #{install_path} -config=#{config_path} -port=#{ENV["PORT"]}"
+puts "  web: #{install_path} -config=#{config_path} -port=$PORT"
